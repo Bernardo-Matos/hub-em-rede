@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen pb-24">
       {/* Hero Section */}
-      <section className="relative bg-primary text-primary-foreground">
+      <section className="relative bg-secondary text-secondary-foreground">
         <div className="container mx-auto px-4 py-12 text-center">
           <div className="max-w-2xl mx-auto space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-balance">HUB em Rede</h1>
@@ -27,9 +27,13 @@ export default function HomePage() {
               />
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <Button asChild size="lg" variant="secondary" className="text-lg h-14 px-8 font-bold">
-                <Link href="/cursos">Ver Cursos</Link>
-              </Button>
+              <Button
+  asChild
+  size="lg"
+  className="text-lg h-14 px-8 font-bold bg-primary text-primary-foreground hover:bg-primary/90 hover:scale-105 transition-transform"
+>
+  <Link href="/cursos">Ver Cursos</Link>
+</Button>
               <Button
                 asChild
                 size="lg"
